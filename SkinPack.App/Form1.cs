@@ -134,7 +134,7 @@ namespace SkinPackCreator
         {
             try
             {
-                if (Global.Skins.SkinList.Count < 2 && !IsMcpackCreated(sender, e))
+                if (!IsMcpackCreated(sender, e))
                     return;
 
                 ClickEvents.MoveUp(this);
@@ -148,7 +148,7 @@ namespace SkinPackCreator
         {
             try
             {
-                if (Global.Skins.SkinList.Count < 2 && !IsMcpackCreated(sender, e))
+                if (!IsMcpackCreated(sender, e))
                     return;
 
                 ClickEvents.MoveDown(this);
