@@ -221,11 +221,11 @@ namespace SkinPackCreator.ClickEvents
 
             if (index < 1 && Global.Skins.SkinList.Count >= 2)
             {
-                MessageBox.Show("The selected skin is not able to move further up!");
+                MessageBox.Show("The selected skin is not able to move further up!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (Global.Skins.SkinList.Count <= 1)
             {
-                MessageBox.Show("You need at least 2 skins to be able to move the currently selected skin up!");
+                MessageBox.Show("You need at least 2 skins to be able to move the currently selected skin up!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -249,11 +249,11 @@ namespace SkinPackCreator.ClickEvents
 
             if (Global.Skins.SkinList.Count <= 1)
             {
-                MessageBox.Show("You need at least 2 skins to be able to move the currently selected skin down!");
+                MessageBox.Show("You need at least 2 skins to be able to move the currently selected skin down!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (index + 1 == Global.Skins.SkinList.Count)
             {
-                MessageBox.Show("The selected skin is not able to move further down!");
+                MessageBox.Show("The selected skin is not able to move further down!", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
